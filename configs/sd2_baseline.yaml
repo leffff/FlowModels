@@ -22,13 +22,13 @@ data:
     shuffle: True
   storage_options:
     anon: false
-    key: 'officecds-user01'
-    secret: 'jym0FuboUnR5VsPmCgYTGv1QQfglYZhPRWbEfS59'
+    key: ''
+    secret: ''
     client_kwargs:
-      endpoint_url: 'https://s3pd12.sbercloud.ru'
+      endpoint_url: ''
   dataset:
     shuffle_num: 12000
     image_size: 256
     seed: 6955
-    data_file: /home/jovyan/vladimir/imagen/kandinsky4/data/train.list
+    data_file: ''
   uncond_prob: 0.1
