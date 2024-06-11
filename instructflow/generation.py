@@ -117,7 +117,7 @@ def generate_rk4(unet, vae, x_0, encoder_hidden_states, n_steps: int = 100, devi
     return x_t
 
 
-def generate_cfg(unet, vae, x_0, encoder_hidden_states, guidance_scale, n_steps: int = 100, device: str = "cuda"):
+def generate_euler_cfg(unet, vae, x_0, encoder_hidden_states, null_encoder_hidden_states, guidance_scale, n_steps: int = 100, device: str = "cuda"):
     unet.to(device)
     unet.eval()    
 
@@ -129,7 +129,7 @@ def generate_cfg(unet, vae, x_0, encoder_hidden_states, guidance_scale, n_steps:
     t = torch.linspace(eps, 1 - eps, n_steps + 1).to(device)
     h = 1 / n_steps 
     
-    for i in tqdm(range(1, len(t))):
+    for i in range(1, len(t)):
         t_prev = t[i - 1].unsqueeze(0).repeat((bs,))
         with torch.no_grad():
             x_t_cond, x_t_uncond = unet(
@@ -160,7 +160,7 @@ def generate_midpoint_cfg(unet, vae, x_0, encoder_hidden_states, null_encoder_hi
     t = torch.linspace(eps, 1 - eps, n_steps + 1).to(device)
     h = 1 / n_steps 
     
-    for i in tqdm(range(1, len(t))):
+    for i in range(1, len(t)):
         t_prev = t[i - 1].unsqueeze(0).repeat((bs,))
         
         with torch.no_grad():
@@ -202,7 +202,7 @@ def generate_rk4_cfg(unet, vae, x_0, encoder_hidden_states, null_encoder_hidden_
 
     encoder_hidden_states_chunk = torch.cat([encoder_hidden_states, null_encoder_hidden_states], dim=0)
     
-    for i in tqdm(range(1, len(t))):
+    for i in range(1, len(t)):
         t_prev = t[i - 1].unsqueeze(0).repeat((bs,))
         
         with torch.no_grad():
