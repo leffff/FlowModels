@@ -6,11 +6,14 @@ The aim of this repository is to create a Flow-Matching-based model capable of d
 ![text2img](images/text2img.png)
 
 ## Inversion example
-![text2img](images/puppy.png) ![text2img](images/puppy_rec.png) ![text2img](images/kitten.png)
-
+Input Image                                             |  FM Inversed                                                 |  Changed prompt
+:------------------------------------------------------:|:------------------------------------------------------------:|:---------------------------------------:
+<img src="images/puppy.png" alt="drawing" width="350"/> | <img src="images/puppy_rec.png" alt="drawing" width="350"/>  |  <img src="images/kitten.png" alt="drawing" width="350"/>
 
 # TODO:
 - [x] Train a foundint text2img model
+- [x] FM Inversion
+- [x] Midpoint, Euler, RK4 solvers (with CFG)
 - [ ] Train a model for jpeg restoration, debluring, denoising, superres, coloring
 - [ ] Train a model for inpainting, outpainting
 - [ ] Lattent Adversarial Diffusion Distillaiton (4 steps)
