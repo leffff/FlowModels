@@ -14,7 +14,10 @@ Input Image                                             |  FM Inversed          
 - [x] Train a foundint text2img model
 - [x] FM Inversion
 - [x] Midpoint, Euler, RK4 solvers (with CFG)
+- [ ] N-th Reflow (for straightening and fast simulation)
+- [ ] Rectified Flow Distillation
+- [ ] Lattent Adversarial Diffusion Distillaiton (4 steps)
 - [ ] Train a model for jpeg restoration, debluring, denoising, superres, coloring
 - [ ] Train a model for inpainting, outpainting
-- [ ] Lattent Adversarial Diffusion Distillaiton (4 steps)
+- [ ] RLHF
 - [ ] Bridge Matching
