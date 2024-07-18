@@ -3,7 +3,14 @@ The aim of this repository is to create a Flow-Matching-based model capable of d
 
 
 ## text2img generation example
+Rectflow $^1$ full steps
 ![text2img](images/text2img.png)
+
+Rectflow $^1$ 5 steps
+![text2img](images/recflow_1_5_steps.png)
+
+Rectflow $^2$ 5 steps
+![text2img](images/recflow_2_5_steps.png)
 
 ## Inversion example
 Input Image                                             |  FM Inversed                                                 |  Changed prompt
@@ -14,7 +21,7 @@ Input Image                                             |  FM Inversed          
 - [x] Train a foundint text2img model
 - [x] FM Inversion
 - [x] Midpoint, Euler, RK4 solvers (with CFG)
-- [ ] N-th Reflow (for straightening and fast simulation)
+- [x] N-th Reflow (for straightening and fast simulation)
 - [ ] Rectified Flow Distillation
 - [ ] Lattent Adversarial Diffusion Distillaiton (4 steps)
 - [ ] Train a model for jpeg restoration, debluring, denoising, superres, coloring
