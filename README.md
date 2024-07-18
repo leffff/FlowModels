@@ -18,10 +18,10 @@ Input Image                                             |  FM Inversed          
 <img src="images/puppy.png" alt="drawing" width="350"/> | <img src="images/puppy_rec.png" alt="drawing" width="350"/>  |  <img src="images/kitten.png" alt="drawing" width="350"/>
 
 # TODO:
-- [x] Train a foundint text2img model
-- [x] FM Inversion
-- [x] Midpoint, Euler, RK4 solvers (with CFG)
-- [x] N-th Reflow (for straightening and fast simulation)
+- [x] [Train a foundint text2img model](sd_2_fm_finetuning.ipynb)
+- [x] [FM Inversion](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_inversion.ipynb)
+- [x] [Midpoint, Euler, RK4 solvers (with CFG)](https://github.com/leffff/InstructFlow/blob/main/instructflow/generation.py)
+- [x] [N-th Reflow (for straightening and fast simulation)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_k_order.ipynb)
 - [ ] Rectified Flow Distillation
 - [ ] Lattent Adversarial Diffusion Distillaiton (4 steps)
 - [ ] Train a model for jpeg restoration, debluring, denoising, superres, coloring
