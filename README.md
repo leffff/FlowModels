@@ -12,6 +12,12 @@ Rectflow $^1$ 5 steps
 Rectflow $^2$ 5 steps
 ![text2img](images/recflow_2_5_steps.png)
 
+Rectflow $^2$ + Distill 1 step
+![text2img](images/rectflow_2_distill_1step.png)
+
+Rectflow $^2$ + Distill + Midpoint 1 step
+![text2img](images/rectflow_2_distill_1_step_midpoint.png)
+
 ## Inversion example
 Input Image                                             |  FM Inversed                                                 |  Changed prompt
 :------------------------------------------------------:|:------------------------------------------------------------:|:---------------------------------------:
