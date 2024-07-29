@@ -1,5 +1,5 @@
 # InstructFlow
-The aim of this repository is to create a Flow-Matching-based model capable of doing text2img, solving inverse problems: jpeg restoration, debluring, denoising, superres, coloring, inpainting, outpainting.
+The aim of this repository is to test and implement Flow-Matching-based models
 
 
 ## text2img generation example
