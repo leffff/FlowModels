@@ -13,7 +13,7 @@ Rectflow $^2$ 5 steps
 ![text2img](images/recflow_2_5_steps.png)
 
 Rectflow $^2$ 1 step
-![text2img](images/rectflow_2_1step.png)
+![text2img](images/rectflow_2_1_step.png)
 
 Rectflow $^2$ + Distill 1 step
 ![text2img](images/rectflow_2_distill_1step.png)
