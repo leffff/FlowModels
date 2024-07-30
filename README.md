@@ -31,9 +31,9 @@ Input Image                                             |  FM Inversed          
 - [x] [FM Inversion](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_inversion.ipynb)
 - [x] [Midpoint, Euler, RK4 solvers (with CFG)](https://github.com/leffff/InstructFlow/blob/main/instructflow/generation.py)
 - [x] [N-th Reflow (for straightening and fast simulation)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_k_order.ipynb)
-- [ ] Rectified Flow Distillation
-- [ ] Lattent Adversarial Diffusion Distillaiton (4 steps)
+- [x] Rectified Flow Distillation (1 step)
+- [ ] Lattent Adversarial Diffusion Distillaiton (1 step)
+- [ ] Diffusion RLHF
+- [ ] Bridge Matching
 - [ ] Train a model for jpeg restoration, debluring, denoising, superres, coloring
 - [ ] Train a model for inpainting, outpainting
-- [ ] RLHF
-- [ ] Bridge Matching
