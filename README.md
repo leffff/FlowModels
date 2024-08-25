@@ -32,6 +32,7 @@ Input Image                                             |  FM Inversed          
 - [x] [Midpoint, Euler, RK4 solvers (with CFG)](https://github.com/leffff/InstructFlow/blob/main/instructflow/generation.py)
 - [x] [N-th Reflow (for straightening and fast simulation)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_k.ipynb)
 - [x] [Rectified Flow Distillation (1 step)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_distil_k.py)
+- [ ] Immiscible Diffusion
 - [ ] Lattent Adversarial Diffusion Distillaiton (1 step)
 - [ ] Diffusion RLHF
 - [ ] Bridge Matching
