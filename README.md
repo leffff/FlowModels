@@ -1,4 +1,4 @@
-# InstructFlow
+# Flow Models
 The aim of this repository is to test and implement Flow-Matching-based models
 
 
