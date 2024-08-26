@@ -228,7 +228,7 @@ def train_epoch(student_unet, teacher_unet, vae, text_encoder, dataloader, loss_
             
             total_loss = 0
 
-            torch.save(student_unet.state_dict(), f"/home/jovyan/shares/SR004.nfs2/novitskiy/instructflow/checkpoints/sd_2_1_rf_distill_generation_v1/{12000 + batch_i}.pt")
+            torch.save(student_unet.state_dict(), f"/home/jovyan/shares/SR004.nfs2/novitskiy/instructflow/checkpoints/sd_2_1_rf_distill_generation_v1/{17000 + batch_i}.pt")
 
 
 
