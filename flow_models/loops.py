@@ -5,10 +5,11 @@ import scipy
 
 from flow_models.generation import generate
 from flow_models.distances import l2_dist
+from flow_models.utils import show_images
 
 
 
-def train_epoch(model, vae, text_encoder, dataloader, loss_function, optimizer, scheduler, device, immiscible=False, checkpoint_path="./checkpoints"):
+def train_epoch(model, vae, text_encoder, dataloader, loss_function, optimizer, scheduler, device, immiscible=False, checkpoint_path="./checkpoints", log_every_n=5000):
     model.to(device)
     vae.to(device)
     text_encoder.to(device)
@@ -31,9 +32,8 @@ def train_epoch(model, vae, text_encoder, dataloader, loss_function, optimizer, 
         x_0_latents = torch.randn_like(x_1_latents, device=device)
 
         if immiscible:
-            plan = scipy.optimize.linear_sum_assignment(l2_dist(x_0_latents, x_1_latents).cpu())[1]
-
-        x_0_latents = x_0_latents[plan]
+            plan = scipy.optimize.linear_sum_assignment(l2_dist(x_1_latents, x_0_latents).cpu())[1]
+            x_0_latents = x_0_latents[plan]
         
         t = torch.sigmoid(torch.randn((bs,), device=device))
 
@@ -48,11 +48,11 @@ def train_epoch(model, vae, text_encoder, dataloader, loss_function, optimizer, 
         total_loss += loss.item() 
         batch_i += 1
 
-        if batch_i % 5000 == 0:
-            x_gen = generate(model=model, vae=vae, x_0=x_0_latent[:16], encoder_hidden_states=encoder_hidden_states[:16], device=device)
+        if batch_i % log_every_n == 0:
+            x_gen = generate(model=model, vae=vae, x_0=x_0_latents[:16], encoder_hidden_states=encoder_hidden_states[:16], device=device)
            
             log = {
-                "loss": total_loss / 5000,
+                "loss": total_loss / log_every_n,
                 "generated_images": wandb.Image(show_images(x_gen)),
             }
             wandb.log(log)
