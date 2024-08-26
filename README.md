@@ -9,7 +9,10 @@ Rectflow $^1$ full steps
 Rectflow $^1$ 5 steps
 ![text2img](images/recflow_1_5_steps.png)
 
-Rectflow $^2$ 5 steps
+Rectflow $^1$ 5 steps
+![text2img](images/rectflow_1_1_step.png)
+
+Rectflow $^2$ 1 step
 ![text2img](images/recflow_2_5_steps.png)
 
 Rectflow $^2$ 1 step
