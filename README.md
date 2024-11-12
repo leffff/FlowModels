@@ -24,7 +24,7 @@ Rectflow $^2$ + Distill 1 step
 Rectflow $^2$ + Distill + Midpoint 1 step
 ![text2img](images/rectflow_2_distill_1_step_midpoint.png)
 
-LADD $^2$ 4 steps
+LADD 4 steps
 ![text2img](images/rectflow_2_distill_4_steps_ladd.png)
 
 ## Inversion example
