@@ -24,6 +24,9 @@ Rectflow $^2$ + Distill 1 step
 Rectflow $^2$ + Distill + Midpoint 1 step
 ![text2img](images/rectflow_2_distill_1_step_midpoint.png)
 
+LADD $^2$ 4 steps
+![text2img](images/rectflow_2_distill_4_steps_ladd.png)
+
 ## Inversion example
 Input Image                                             |  FM Inversed                                                 |  Changed prompt
 :------------------------------------------------------:|:------------------------------------------------------------:|:---------------------------------------:
@@ -36,7 +39,7 @@ Input Image                                             |  FM Inversed          
 - [x] [N-th Reflow (for straightening and fast simulation)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_k.ipynb)
 - [x] [Rectified Flow Distillation (1 step)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_distil_k.py)
 - [x] [Immiscible Diffusion](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_immiscible.ipynb)
-- [ ] Lattent Adversarial Diffusion Distillaiton (1 step)
+- [x] [Lattent Adversarial Diffusion Distillaiton](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_ladd.ipynb)
 - [ ] Diffusion RLHF
 - [ ] Bridge Matching
 - [ ] Train a model for jpeg restoration, debluring, denoising, superres, coloring
