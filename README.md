@@ -43,6 +43,6 @@ Input Image                                             |  FM Inversed          
 - [x] [Rectified Flow Distillation (1 step)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_distil_k.py)
 - [x] [Immiscible Diffusion](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_immiscible.ipynb)
 - [x] [Lattent Adversarial Diffusion Distillaiton](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_ladd.ipynb)
-- [ ] Shortcut Model
+- [x] Shortcut Model
 - [ ] Diffusion RLHF
 - [ ] Bridge Matching
