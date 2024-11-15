@@ -27,6 +27,9 @@ Rectflow $^2$ + Distill + Midpoint 1 step
 LADD 4 steps
 ![text2img](images/rectflow_2_distill_4_steps_ladd.png)
 
+Shortcut 4 steps
+![text2img](images/shortcut.png)
+
 ## Inversion example
 Input Image                                             |  FM Inversed                                                 |  Changed prompt
 :------------------------------------------------------:|:------------------------------------------------------------:|:---------------------------------------:
