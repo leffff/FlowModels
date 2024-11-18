@@ -1,6 +1,8 @@
 # Flow Models
 The aim of this repository is to test and implement Flow-Matching-based models
 
+# Warning
+The data as well as dataset can not be shared!
 
 ## text2img generation example
 Rectflow $^1$ full steps
