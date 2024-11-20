@@ -1,0 +1,33 @@
+trainer:
+    num_epochs: 1
+    learning_rate: 0.00001
+    lr_warmup_steps: 500
+    device: "cuda"
+
+
+model:
+    model_id: "stabilityai/stable-diffusion-2-1-base"
+    num_inference_steps: 100
+
+system:
+    pf32_precision: 'high' # 'high' 'medium'
+    random_state: 42     
+
+data:
+  processor_name: ""
+  dataloader:
+    batch_size: 128
+    num_workers: 40
+    shuffle: True
+  storage_options:
+    anon: false
+    key: ''
+    secret: ''
+    client_kwargs:
+      endpoint_url: ''
+  dataset:
+    shuffle_num: 12000
+    image_size: 256
+    seed: 6955
+    data_file: ""
+  uncond_prob: 0.1
