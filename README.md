@@ -46,5 +46,7 @@ Input Image                                             |  FM Inversed          
 - [x] [Immiscible Diffusion](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_immiscible.ipynb)
 - [x] [Lattent Adversarial Diffusion Distillaiton](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_ladd.ipynb)
 - [x] [Shortcut Model](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_shortcut.ipynb)
+- [ ] Consisntency Distillation
+- [ ] Phased (Multiboundary) Consisntency Distillation
 - [ ] Diffusion RLHF
 - [ ] Bridge Matching
