@@ -41,7 +41,7 @@ Input Image                                             |  FM Inversed          
 - [x] [Train a foundint text2img model](sd_2_fm_finetuning.ipynb)
 - [x] [FM Inversion](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_inversion.ipynb)
 - [x] [Midpoint, Euler, RK4 solvers (with CFG)](https://github.com/leffff/InstructFlow/blob/main/instructflow/generation.py)
-- [x] [N-th Reflow (for straightening and fast simulation)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_k.ipynb)
+- [x] [N-th Reflow (for straightening and fast simulation)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_k.ipynb) (Same as Knowledge Distillaiton for Diffusion)
 - [x] [Rectified Flow Distillation (1 step)](https://github.com/leffff/InstructFlow/blob/main/sd_2_fm_finetuning_reflow_distil_k.py)
 - [x] [Immiscible Diffusion](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_immiscible.ipynb)
 - [x] [Lattent Adversarial Diffusion Distillaiton](https://github.com/leffff/FlowModels/blob/main/sd_2_fm_finetuning_ladd.ipynb)
